@@ -18,5 +18,4 @@ public class BasketEntity {
     @Id
     @GeneratedValue
     Long id;
-
 }

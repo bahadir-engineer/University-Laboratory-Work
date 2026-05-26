@@ -1,0 +1,20 @@
+services:
+  backend-monolith:
+    container_name: backend-monolith
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '8080:8080'
+    restart: always
+
+  postgres-server:
+    container_name: postgres-server
+    image: postgres
+    ports:
+      - '5432:5432'
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: hayford
+      POSTGRES_PASSWORD: @hayford@_@24
+    restart: always
