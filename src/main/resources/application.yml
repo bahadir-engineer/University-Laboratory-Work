@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: UniLab
+
+  config:
+    import:
+      - classpath:application-db.yml
